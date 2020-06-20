@@ -14,6 +14,18 @@ export default function Navbar() {
     setNav(isOpen => !isOpen)
   }
 
+  const generateLinks = () =>
+    links.map(({ path, text }, index) => (
+      <li key={index}>{<Link to={path}>{text}</Link>}</li>
+    ))
+
+  const generateSocialIcons = () =>
+    socialIcons.map(({ icon, url }, index) => (
+      <a key={index} href={url} target="_blank" rel="noreferrer">
+        {icon}
+      </a>
+    ))
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -31,10 +43,10 @@ export default function Navbar() {
               : `${styles.navLinks}`
           }
         >
-          {links.map(({ path, text }, index) => (
-            <li key={index}>{<Link to={path}>{text}</Link>}</li>
-          ))}
+          {generateLinks()}
         </ul>
+
+        <div className={styles.navSocialLinks}>{generateSocialIcons()}</div>
       </div>
     </nav>
   )
