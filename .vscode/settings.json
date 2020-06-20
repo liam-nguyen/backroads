@@ -3,5 +3,8 @@
         "activityBar.background": "#620200",
         "titleBar.activeBackground": "#8A0200",
         "titleBar.activeForeground": "#FFFBFB"
-    }
+    },
+    "cSpell.words": [
+        "Squarespace"
+    ]
 }
