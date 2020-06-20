@@ -7,7 +7,11 @@ import styles from "./footer.module.css"
 
 export default function Footer() {
   const generateLinks = () =>
-    links.map(({ path, text }, index) => <Link to={path}>{text}</Link>)
+    links.map(({ path, text }, index) => (
+      <Link to={path} key={index}>
+        {text}
+      </Link>
+    ))
 
   const generateSocialIcons = () =>
     socialIcons.map(({ icon, url }, index) => (
