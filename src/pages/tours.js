@@ -1,5 +1,6 @@
 import React from "react"
+import Layout from "../components/Layout"
 
 export default function Tours() {
-  return <div>I'm Tours</div>
+  return <Layout>I'm Tours</Layout>
 }
