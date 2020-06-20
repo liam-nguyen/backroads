@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import { FaAlignRight } from "react-icons/fa"
 import { Link } from "gatsby"
+import { FaAlignRight } from "react-icons/fa"
+
 import links from "../../constants/links"
 import socialIcons from "../../constants/social-links"
-
 import styles from "./navbar.module.css"
 import logo from "../../images/logo.svg"
 
