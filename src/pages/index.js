@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <SimpleHero>
-        <Banner title="Liam" info="haha">
+        <Banner title="Continue Exploring" info="An adventure is waiting ahead">
           <Link className="btn-white" to="/tours">
             Explore tours
           </Link>
