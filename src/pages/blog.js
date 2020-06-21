@@ -2,5 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 
 export default function Blog() {
-  return <Layout>I'm Blog</Layout>
+  return (
+    <Layout>
+      <h1>I'm Blog</h1>
+    </Layout>
+  )
 }
