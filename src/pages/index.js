@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import SimpleHero from "../components/SimpleHero/SimpleHero"
-import Banner from "../components/Banner/Banner"
+import SimpleHero from "../components/SimpleHero"
+import Banner from "../components/Banner"
 
 export default function Home() {
   return (
