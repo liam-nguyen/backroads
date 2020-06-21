@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "./banner.module.css"
+import styles from "../css/banner.module.css"
 
 export default function Banner({ title, info, children }) {
   return (
