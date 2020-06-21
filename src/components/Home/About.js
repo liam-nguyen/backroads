@@ -4,19 +4,6 @@ import Img from "gatsby-image"
 
 import Title from "../Title"
 import styles from "../../css/about.module.css"
-import img from "../../images/defaultBcg.jpeg"
-
-const aboutImageQuery = graphql`
-  query aboutImage {
-    aboutImage: file(relativePath: { eq: "defaultBcg.jpeg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default function About() {
   const { aboutImage } = useStaticQuery(aboutImageQuery)
@@ -46,3 +33,15 @@ export default function About() {
     </div>
   )
 }
+
+const aboutImageQuery = graphql`
+  query aboutImage {
+    aboutImage: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
