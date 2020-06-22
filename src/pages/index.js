@@ -1,5 +1,7 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
@@ -12,9 +14,9 @@ export default function Home() {
     <Layout>
       <StyledHero home image={heroImage.childImageSharp.fluid}>
         <Banner title="Continue Exploring" info="An adventure is waiting ahead">
-          <Link className="btn-white" to="/tours">
+          <AniLink fade className="btn-white" to="/tours">
             Explore tours
-          </Link>
+          </AniLink>
         </Banner>
       </StyledHero>
       <About />
