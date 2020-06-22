@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaAlignRight } from "react-icons/fa"
 
 import links from "../constants/links"
@@ -16,7 +16,13 @@ export default function Navbar() {
 
   const generateLinks = () =>
     links.map(({ path, text }, index) => (
-      <li key={index}>{<Link to={path}>{text}</Link>}</li>
+      <li key={index}>
+        {
+          <AniLink fade to={path}>
+            {text}
+          </AniLink>
+        }
+      </li>
     ))
 
   const generateSocialIcons = () =>
