@@ -3,7 +3,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
-
 import styles from "../css/error.module.css"
 
 export default function Page404() {

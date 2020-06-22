@@ -1,13 +1,15 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import ContactLayout from "../components/Contact/ContactLayout"
 
 export default function Contact({ data }) {
   return (
     <Layout>
-      <StyledHero image={data.heroImage.childImageSharp.fluid}></StyledHero>
+      <StyledHero image={data.heroImage.childImageSharp.fluid} />
+      <ContactLayout />
     </Layout>
   )
 }
