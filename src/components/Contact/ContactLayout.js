@@ -8,7 +8,7 @@ export default function Contact() {
       <Title title="contact" subtitle="us" />
       <div className={styles.center}>
         <form
-          action="https://formspree.io/ducchinh0806@gmail.com"
+          action="https://formspree.io/sample@sample.gmail.com"
           method="POST"
           className={styles.form}
         >
